@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- A RecyclerView with some commonly used attributes -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appImage"
+
+        android:src="@drawable/sunicon"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+
+        android:scrollbars="vertical"
+        android:layout_below="@+id/appImage"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_alignLeft="@+id/my_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="2dp"
+        android:src="@drawable/ic_add_circle"
+        android:layout_alignTop="@+id/my_recycler_view"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout> 

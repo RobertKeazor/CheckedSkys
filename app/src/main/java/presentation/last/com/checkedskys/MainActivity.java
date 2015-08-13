@@ -67,8 +67,8 @@ public class MainActivity extends ActionBarActivity implements Deligator, OnWeat
     @Bind(R.id.my_recycler_view)
     RecyclerView myRecyclerView;
     private Toolbar toolbar;
-    String TITLES[] = {"Weather", "Location", "News"};
-    int ICONS[] = {R.drawable.sun, R.drawable.location, R.drawable.news};
+    String TITLES[] = {"Web News", "Radar Images", "Settings"};
+    int ICONS[] = {R.drawable.news,R.drawable.location,R.drawable.sun };
     RecyclerView.Adapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;            // Declaring Layout Manager as a linear layout manager
     DrawerLayout Drawer;                                  // Declaring DrawerLayout

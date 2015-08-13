@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import ErrorCatchers.Alert_No_Internet;
 import Interfaces.Deligator;
 import presentation.last.com.checkedskys.MainActivity;
 import presentation.last.com.checkedskys.R;
@@ -20,7 +21,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private ArrayList<String> mBottomDataSet;
     public Deligator deligator;
     private  int imageRes;
-
+    
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView txtHeader;
@@ -79,6 +80,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             public void onClick(View v) {
                 deligator.Deligate_Update(position);
                 //remove(name);
+
             }
         });
 
